@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+  <title>Juanes Pérez Interactive Designer</title>
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="shortcut icon" href="./resources/logoSolo.svg" type="image/x-icon">
+  <link href="https://unpkg.com/webkul-micron@1.1.6/dist/css/micron.min.css" type="text/css" rel="stylesheet">
+  <script src="https://unpkg.com/webkul-micron@1.1.6/dist/script/micron.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <div class="mainContainer">
+
+         <!-- <div id="instructions"></div> -->
+         <canvas id="canvas">Canvas is not supported in your browser</canvas>
+
+        <nav class="mainContainer__nav">
+            <ul class="mainContainer__navHeader">
+                
+                <a href="/Portfolio/index.html">
+                    <svg class="mainContainer__navImg mainContainer__navImgHome" width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.70842 18.7846L21.6031 5.75829C22.0558 5.33471 22.7521 5.34503 23.1921 5.7816L36.3149 18.8078C36.5395 19.0308 36.6665 19.3376 36.6665 19.6577V38.3681C36.6665 39.0222 36.1482 39.5523 35.5086 39.5523H25.8595C25.22 39.5523 24.7016 39.0222 24.7016 38.3681V29.684H19.2981V38.3681C19.2981 39.0222 18.7798 39.5523 18.1402 39.5523H8.49117C7.85164 39.5523 7.33327 39.0226 7.33327 38.3681V19.6577C7.33327 19.3257 7.46913 19.0092 7.70842 18.7846ZM9.64907 37.1839H16.9823V28.4998C16.9823 27.8457 17.5007 27.3156 18.1402 27.3156H25.8595C26.499 27.3156 27.0174 27.8457 27.0174 28.4998V37.1839H34.3507V20.1586L22.363 8.25935L9.64901 20.1788V37.1839H9.64907Z" fill="#AAAAAA"/>
+                    </svg>
+                </a>
+                <a href="/Portfolio/about.html">
+                    <svg class="mainContainer__navImg" width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.9999 19.7139C27.2157 19.7139 32.8418 24.6888 32.8418 33.7224C32.8418 34.4279 32.2863 34.9998 31.6009 34.9998H2.39898C1.7136 34.9998 1.15811 34.4279 1.15811 33.7224C1.15805 24.6893 6.78418 19.7139 16.9999 19.7139ZM30.3149 32.445C29.8268 25.6907 25.3535 22.2687 16.9999 22.2687C8.64635 22.2687 4.17296 25.6907 3.68447 32.445H30.3149Z" fill="#76E2FF"/>
+                        <path d="M16.9998 0C21.6924 0 25.231 3.71588 25.231 8.64315C25.231 13.7147 21.5385 17.8402 16.9998 17.8402C12.4612 17.8402 8.76871 13.7147 8.76871 8.64356C8.76871 3.71588 12.3072 0 16.9998 0ZM16.9998 15.2859C20.1703 15.2859 22.7492 12.3062 22.7492 8.64356C22.7492 5.11547 20.3312 2.55473 16.9998 2.55473C13.7218 2.55473 11.2504 5.17207 11.2504 8.64356C11.2504 12.3062 13.8294 15.2859 16.9998 15.2859Z" fill="#76E2FF"/>
+                    </svg> 
+                </a>
+                <a href="">
+                    <svg class="mainContainer__navImg" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M40.7772 7.46516C40.7747 7.46516 40.7721 7.46484 40.7695 7.46484H29.6133V6.23438C29.6133 4.19897 27.9573 2.54297 25.9219 2.54297H16.0781C14.0427 2.54297 12.3867 4.19897 12.3867 6.23438V7.46484H1.23047C0.54538 7.46484 0 8.02625 0 8.69531V35.7656C0 37.801 1.65601 39.457 3.69141 39.457H38.3086C40.344 39.457 42 37.801 42 35.7656V8.72127C42 8.71967 42 8.71806 42 8.71646C41.9529 7.90833 41.4559 7.46965 40.7772 7.46516ZM14.8477 6.23438C14.8477 5.55602 15.3998 5.00391 16.0781 5.00391H25.9219C26.6002 5.00391 27.1523 5.55602 27.1523 6.23438V7.46484H14.8477V6.23438ZM39.0623 9.92578L35.2411 21.389C35.0735 21.8924 34.6044 22.2305 34.0741 22.2305H27.1523V21C27.1523 20.3204 26.6015 19.7695 25.9219 19.7695H16.0781C15.3985 19.7695 14.8477 20.3204 14.8477 21V22.2305H7.92595C7.39563 22.2305 6.92651 21.8924 6.75893 21.389L2.93774 9.92578H39.0623ZM24.6914 22.2305V24.6914H17.3086V22.2305H24.6914ZM39.5391 35.7656C39.5391 36.444 38.987 36.9961 38.3086 36.9961H3.69141C3.01305 36.9961 2.46094 36.444 2.46094 35.7656V16.2778L4.42424 22.1673C4.92732 23.6772 6.33467 24.6914 7.92595 24.6914H14.8477V25.9219C14.8477 26.6015 15.3985 27.1523 16.0781 27.1523H25.9219C26.6015 27.1523 27.1523 26.6015 27.1523 25.9219V24.6914H34.0741C35.6653 24.6914 37.0727 23.6772 37.5758 22.1673L39.5391 16.2778V35.7656Z" fill="#AAAAAA"/>
+                    </svg>
+                </a>
+                <a href=""><svg class="mainContainer__navImg" fill="#AAAAAA" height="45" viewBox="0 -10 511.98685 511" width="45" xmlns="http://www.w3.org/2000/svg"><path d="m114.59375 491.140625c-5.609375 0-11.179688-1.75-15.933594-5.1875-8.855468-6.417969-12.992187-17.449219-10.582031-28.09375l32.9375-145.089844-111.703125-97.960937c-8.210938-7.167969-11.347656-18.519532-7.976562-28.90625 3.371093-10.367188 12.542968-17.707032 23.402343-18.710938l147.796875-13.417968 58.433594-136.746094c4.308594-10.046875 14.121094-16.535156 25.023438-16.535156 10.902343 0 20.714843 6.488281 25.023437 16.511718l58.433594 136.769532 147.773437 13.417968c10.882813.980469 20.054688 8.34375 23.425782 18.710938 3.371093 10.367187.253906 21.738281-7.957032 28.90625l-111.703125 97.941406 32.9375 145.085938c2.414063 10.667968-1.726562 21.699218-10.578125 28.097656-8.832031 6.398437-20.609375 6.890625-29.910156 1.300781l-127.445312-76.160156-127.445313 76.203125c-4.308594 2.558594-9.109375 3.863281-13.953125 3.863281zm141.398438-112.875c4.84375 0 9.640624 1.300781 13.953124 3.859375l120.277344 71.9375-31.085937-136.941406c-2.21875-9.746094 1.089843-19.921875 8.621093-26.515625l105.472657-92.5-139.542969-12.671875c-10.046875-.917969-18.6875-7.234375-22.613281-16.492188l-55.082031-129.046875-55.148438 129.066407c-3.882812 9.195312-12.523438 15.511718-22.546875 16.429687l-139.5625 12.671875 105.46875 92.5c7.554687 6.613281 10.859375 16.769531 8.621094 26.539062l-31.0625 136.9375 120.277343-71.914062c4.308594-2.558594 9.109376-3.859375 13.953126-3.859375zm-84.585938-221.847656s0 .023437-.023438.042969zm169.128906-.0625.023438.042969c0-.023438 0-.023438-.023438-.042969zm0 0"/></svg></a>               
+            </ul>
+            <ul class="mainContainer__navFooter">
+                <a href=""><img class="mainContainer__navImg" src="./resources/linkedin.svg" alt=""></a>
+                <a href=""><img class="mainContainer__navImg" src="./resources/behance.svg" alt=""></a>
+                <a href=""><img class="mainContainer__navImg" src="./resources/email.svg" alt=""></a>             
+            </ul>
+        </nav>
+       
+        <div class="mainContainer__info mainContainer__info--about">
+            <div class="mainContainer__infoBlock">
+                <div class="mainContainer__infoBlockName">
+                    <h1 class="mainContainer__infoBlockNameTitle">¿Quien soy?</h1>
+                </div>
+                <h4 class="mainContainer__infoBlockText mainContainer__infoBlockText--large">Un diseñador de Medios Interactivos nacido en Cali, Colombia moldeado por el amor hacía la música, la comida y la aventura. 
+                    <br>
+                    <br>
+                    La pasión por el desarrollo Front End y la experiencia de usuario en contextos interdiciplinarios me permiten mostrar mis capacidades creativas, de liderazgo y de trabajo en equipo.
+                    <br>
+                    <br>
+                    Cuando no estoy codificando o mirando píxeles, me encontrarás bailando, haciendo ejercicio o leyendo literatura de terror. </h4>
+            </div>
+        </div>
+
+        <div class="mainContainer__photo">
+            <img src="/Portfolio/resources/photo.png" alt="">
+        </div>
+
+        <div class="mainContainer__logo">
+            <img src="/Portfolio/resources/logoSolo.svg" alt="">
+        </div>
+    </div>
+
+    
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/rain.js"></script>
+    <script src="./scripts/about.js"></script>
+</body>

@@ -1,0 +1,14 @@
+.mainContainer__logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+
+    img{
+        width: 50%;
+        min-width: 95px;
+        margin-bottom: 30px;
+        z-index: 2;
+    }
+}

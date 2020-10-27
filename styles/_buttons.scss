@@ -1,0 +1,15 @@
+.btnMain{
+
+    cursor: pointer;
+    margin-top: 25px;
+    vertical-align: middle;
+    text-decoration: none;
+    background-color: transparent;
+    color: $color-blue;
+    border: solid $color-blue 2px;
+    border-radius: 10px;
+    font-size: $typo-h3;
+    text-shadow: 0.5px -0.5px 0px rgba(0, 0, 0, 0.25);
+    width: 210px;
+    height: 50px;
+}

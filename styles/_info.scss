@@ -1,0 +1,51 @@
+.mainContainer__info{
+    display: flex;
+    width: 100%;
+    height: 70%;
+    z-index: 2;
+
+    &--about{
+        height: 80%;
+    }
+
+    &Block{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 5%;
+        
+        img{
+            width: 40%;
+        }
+
+        &Name{
+            margin-top: 15px;
+
+            h1{
+                color: $color-white;
+                margin: 0;
+                font-size: $typo-h1;
+                font-family: 'Montserrat','Sans-serif';
+                font-weight: $typo-bold;
+            }
+
+        }
+
+        &Text{
+            color: $color-gray;
+            margin: 0;
+            font-size: $typo-h4;
+            font-weight: $typo-regular;
+            margin-top: 10px;
+
+            &--large{
+                width: 60%;
+                margin-top: 20px;
+                font-size: $typo-h3;
+            }
+        }
+
+        
+    }
+}
