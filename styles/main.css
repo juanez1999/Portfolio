@@ -152,66 +152,6 @@ body {
           align-items: center;
 }
 
-.mainContainer__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 70%;
-  z-index: 2;
-}
-
-.mainContainer__info--about {
-  height: 80%;
-}
-
-.mainContainer__infoBlock {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-left: 5%;
-}
-
-.mainContainer__infoBlock img {
-  width: 40%;
-}
-
-.mainContainer__infoBlockName {
-  margin-top: 15px;
-}
-
-.mainContainer__infoBlockName h1 {
-  color: #FFFFFF;
-  margin: 0;
-  font-size: 45px;
-  font-family: 'Montserrat','Sans-serif';
-  font-weight: 700;
-}
-
-.mainContainer__infoBlockText {
-  color: #AAAAAA;
-  margin: 0;
-  font-size: 14px;
-  font-weight: 400;
-  margin-top: 10px;
-}
-
-.mainContainer__infoBlockText--large {
-  width: 60%;
-  margin-top: 20px;
-  font-size: 16px;
-}
-
 .btnMain {
   cursor: pointer;
   margin-top: 25px;
@@ -271,5 +211,65 @@ canvas, #instructions {
   min-width: 95px;
   margin-bottom: 30px;
   z-index: 2;
+}
+
+.mainContainer__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 70%;
+  z-index: 2;
+}
+
+.mainContainer__info--about {
+  height: 80%;
+}
+
+.mainContainer__infoBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-left: 5%;
+}
+
+.mainContainer__infoBlock img {
+  width: 40%;
+}
+
+.mainContainer__infoBlockName {
+  margin-top: 15px;
+}
+
+.mainContainer__infoBlockName h1 {
+  color: #FFFFFF;
+  margin: 0;
+  font-size: 45px;
+  font-family: 'Montserrat','Sans-serif';
+  font-weight: 700;
+}
+
+.mainContainer__infoBlockText {
+  color: #AAAAAA;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.mainContainer__infoBlockText--large {
+  width: 60%;
+  margin-top: 20px;
+  font-size: 16px;
 }
 /*# sourceMappingURL=main.css.map */

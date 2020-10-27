@@ -8,6 +8,9 @@
   <link rel="shortcut icon" href="./resources/logoSolo.svg" type="image/x-icon">
   <link href="https://unpkg.com/webkul-micron@1.1.6/dist/css/micron.min.css" type="text/css" rel="stylesheet">
   <script src="https://unpkg.com/webkul-micron@1.1.6/dist/script/micron.min.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
 </head>
 <body>
 
@@ -47,9 +50,16 @@
         <div class="mainContainer__info">
             <div class="mainContainer__infoBlock">
                 <img src="./resources/logo.svg" alt="">
-                <div class="mainContainer__infoBlockName">
-                    <h1 class="mainContainer__infoBlockNameTitle">Hola,</h1>
-                    <h1 class="mainContainer__infoBlockName2Title">Soy Juanes.</h1>
+                <div class="mainContainer__infoBlockName container">
+                    <h1>
+                        <span class="title">
+                            Hola,
+                        </span>
+                        <br>
+                        <span class="title">
+                            Soy Juanes.
+                        </span>
+                    </h1>
                 </div>
                 <h4 class="mainContainer__infoBlockText">Front End Developer / UX Designer</h4>
                 <button class="btnMain">Mis proyectos</button>
@@ -64,5 +74,5 @@
     
     <script src="./scripts/main.js"></script>
     <script src="./scripts/rain.js"></script>
-    <!-- <script src="./scripts/index.js"></script> -->
+    <script src="./scripts/index.js"></script>
 </body>
