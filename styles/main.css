@@ -55,6 +55,67 @@ body {
   width: 100%;
 }
 
+body {
+  --translate-x: 30px;
+  --translate-y: -20px;
+}
+
+.portrait {
+  max-width: 600px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.portrait:hover .hover {
+  opacity: 0.4;
+}
+
+.portrait:hover .hover-img {
+  -webkit-transform: translate(var(--translate-x), var(--translate-y));
+          transform: translate(var(--translate-x), var(--translate-y));
+}
+
+.fill, .hover-img:after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.hover {
+  -webkit-transition: all 380ms cubic-bezier(0.16, 0.01, 0.77, 1);
+  transition: all 380ms cubic-bezier(0.16, 0.01, 0.77, 1);
+  opacity: 0;
+}
+
+.hover-img {
+  -webkit-transition: opacity, -webkit-transform 320ms cubic-bezier(0.16, 0.01, 0.77, 1);
+  transition: opacity, -webkit-transform 320ms cubic-bezier(0.16, 0.01, 0.77, 1);
+  transition: opacity, transform 320ms cubic-bezier(0.16, 0.01, 0.77, 1);
+  transition: opacity, transform 320ms cubic-bezier(0.16, 0.01, 0.77, 1), -webkit-transform 320ms cubic-bezier(0.16, 0.01, 0.77, 1);
+}
+
+.hover-img:after {
+  content: '';
+  background-color: #76E2FF;
+  mix-blend-mode: color;
+}
+
+.cover-img {
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/Portfolio/resources/photo.png");
+}
+
 .mainContainer__nav {
   min-width: 60px;
   width: 4%;
@@ -271,5 +332,129 @@ canvas, #instructions {
   width: 60%;
   margin-top: 20px;
   font-size: 16px;
+}
+
+.mainContainer__project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+}
+
+.mainContainer__projectState {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.mainContainer__projectStateLine {
+  width: 40%;
+  height: 2px;
+  background-color: #76E2FF;
+}
+
+.mainContainer__projectStateNumber {
+  color: #AAAAAA;
+  font-size: 30px;
+  margin: 0px;
+  width: 10%;
+  text-align: center;
+}
+
+.mainContainer__projectItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  height: 100%;
+  margin-top: 50px;
+}
+
+.mainContainer__projectItemName {
+  position: absolute;
+  z-index: 3;
+}
+
+.mainContainer__projectItemName h1 {
+  font-size: 110px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-family: 'Agency FB', sans-serif;
+  margin: 0;
+}
+
+.mainContainer__projectItemName h3 {
+  font-size: 30px !important;
+  color: #FFFFFF;
+  font-family: 'Agency FB', sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+.mainContainer__projectItemName span {
+  font-family: 'Agency FB', sans-serif;
+}
+
+.mainContainer__projectItemImg {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+}
+
+.mainContainer__projectItemImg img {
+  width: 70%;
+  height: 100%;
+}
+
+.mainContainer__projectItemArrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.mainContainer__projectItemArrow img {
+  width: 80%;
 }
 /*# sourceMappingURL=main.css.map */

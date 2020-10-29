@@ -1,0 +1,86 @@
+.mainContainer__project{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    z-index: 2;
+
+    &State{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+
+        &Line{
+            width: 40%;
+            height: 2px;
+            background-color: $color-blue;
+        }
+
+        &Number{
+          color: $color-gray;  
+          font-size: $typo-h2;
+          margin: 0px;
+          width: 10%;
+          text-align: center;
+        }
+    }
+
+    &Item{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 100%;
+        margin-top: 50px;
+
+        &Name{
+            position: absolute;
+            z-index: 3;
+
+            h1{
+                font-size: $typo-bigger;
+                color: $color-white;
+                font-weight: $typo-bold;
+                font-family: 'Agency FB', sans-serif;
+                margin: 0;
+            }
+            h3{
+                font-size: $typo-h2 !important;
+                color: $color-white;
+                font-family: 'Agency FB', sans-serif;
+                font-weight: $typo-regular;
+                margin: 0;
+            }
+            span{
+                font-family: 'Agency FB', sans-serif; 
+            }
+        }
+
+        &Img{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 2;
+
+            img{
+                width: 70%;
+                height: 100%;
+            }
+        }
+
+        &Arrow{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+
+            img{
+                width: 80%;
+            }
+        }
+    }
+}
