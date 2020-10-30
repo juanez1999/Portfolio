@@ -30,14 +30,27 @@
         width: 60%;
         min-width: 15px;
 
+        &Container{
+            display: block; 
+
+            &--desactived{
+                display: none;
+            }
+        }
+
+        &Hover{
+            font-size: $typo-h4;
+            color: $color-blue;
+
+            &--desactived{
+                display: none;
+                font-size: $typo-h4;
+                color: $color-blue;
+            }
+        }
+
         &Home{
             width: 80%;
-
-            &--active{
-                path{
-                    fill: $color-blue !important;
-                }
-            }
         }
     }
 
@@ -60,3 +73,4 @@
     }
    
 }
+
