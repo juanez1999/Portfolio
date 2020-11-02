@@ -1,13 +1,15 @@
 var db = firebase.firestore();
 var id = localStorage.getItem("id");
 
-var body = document.querySelector('body');
-var project = document.querySelector('.mainContainer__project');
-var nav = document.querySelector('.mainContainer__nav')
+const body = document.querySelector('body');
+const project = document.querySelector('.mainContainer__project');
+const nav = document.querySelector('.mainContainer__nav')
+const arrow = document.querySelector('.mainContainer__projectItemArrow');
 
 body.classList.add('bodyOverflow');
 project.classList.add('mainContainer__project--overflow');
 nav.classList.add('mainContainer__nav--overflow');
+arrow.classList.add('mainContainer__projectItemArrow--overflow');
 
 var objects = [];
 function getProducts(){

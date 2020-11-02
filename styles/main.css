@@ -842,6 +842,7 @@ canvas, #instructions {
 .mainContainer__projectItemImg img {
   width: 70%;
   height: 70%;
+  cursor: pointer;
 }
 
 .mainContainer__projectItemArrow {
@@ -859,7 +860,7 @@ canvas, #instructions {
   z-index: 4;
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 96%;
 }
 
 .mainContainer__projectItemArrow img {
@@ -915,5 +916,9 @@ canvas, #instructions {
 
 .projectView__beImg img {
   width: 100%;
+}
+
+.mainContainer__projectItemArrow--overflow {
+  position: fixed;
 }
 /*# sourceMappingURL=main.css.map */
