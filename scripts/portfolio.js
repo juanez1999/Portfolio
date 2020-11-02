@@ -9,8 +9,6 @@ const project = document.querySelector('.mainContainer__projectItem');
 let current = 0;
 
 function handleNextSlide () {
-    // console.log(carrouselStripe.children.length);
-
     current++;
     if(current >= carrouselStripe.children.length) {
         current = 0;
@@ -18,11 +16,11 @@ function handleNextSlide () {
     number.innerHTML = current+1;
     const height = project.clientHeight;
     carrouselStripe.style.transform = 'translate(0px, -' + (height * current) + 'px)';
-    console.log(carrousel.clientHeight);
-
+    animation();
 }
-console.log(window.innerHeight);
 
 arrow.addEventListener('click', handleNextSlide);
 
-
+$(document).bind('mousewheel', function(e) {
+    handleNextSlide();
+});

@@ -1,26 +1,17 @@
-var title = document.querySelector('.mainContainer__infoBlockName');
-var letter = title.innerText;
-var letters = letter.split('');
-
-console.log(letters);
-
-// letters.forEach(elem => {
-//     elem.addEventListener('mouseenter', function(){
-//         micron.getEle(elem).interaction("squeeze").duration(".45").timing("ease-out");
-//     });
-// });
-
-title.addEventListener('mouseenter', function(){
-    titleAnimate();
+$(document).ready(function() {
+    $(".title").lettering();
 });
 
-function titleAnimate(){
-    micron.getEle(".mainContainer__infoBlockNameTitle").interaction("squeeze").duration(".45").timing("ease-out");
+
+$(document).ready(function() {
+    animation();
+});
+
+function animation() {
+    var title1 = new TimelineMax();
+    title1.staggerFromTo(".title span", 0.5, 
+    {ease: Back.easeOut.config(0.1), opacity: 0, bottom: -80},
+    {ease: Back.easeOut.config(0.3), opacity: 1, bottom: 0}, 0.02);
 }
 
-function animate(){
-    micron.getEle(".mainContainer__infoBlockNameTitle").interaction("tada").duration(".45").timing("ease-out");
-}
-
-animate();
 
