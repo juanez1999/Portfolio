@@ -5,10 +5,11 @@ var number = document.querySelector('.mainContainer__projectStateNumber');
 
 const carrousel = document.querySelector('.carrousel');
 const carrouselStripe = document.querySelector('.carrousel__stripe');
-const project = document.querySelector('.mainContainer__projectItem');
 let current = 0;
 
 function handleNextSlide () {
+    const project = document.querySelector('.mainContainer__projectItem');
+
     current++;
     if(current >= carrouselStripe.children.length) {
         current = 0;

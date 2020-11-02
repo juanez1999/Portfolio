@@ -50,6 +50,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 10%;
 }
 
 .mainContainer__photo img {
@@ -63,7 +64,6 @@ body {
 
 .portrait {
   max-width: 600px;
-  margin: 0 auto;
   height: 100%;
   position: relative;
   overflow: hidden;
@@ -347,6 +347,9 @@ canvas, #instructions {
           justify-content: flex-end;
   margin-right: 20px;
   width: 10%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .mainContainer__logo img {
@@ -736,9 +739,6 @@ canvas, #instructions {
           flex-direction: column;
   width: 100%;
   height: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   z-index: 2;
   overflow-y: hidden;
 }
@@ -785,16 +785,13 @@ canvas, #instructions {
           flex-direction: column;
   width: 100%;
   height: 100vh;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .mainContainer__projectItemName {
   position: absolute;
   z-index: 3;
-  margin-left: 20%;
-  width: 100%;
+  margin-left: 55px;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -862,10 +859,11 @@ canvas, #instructions {
   z-index: 4;
   position: absolute;
   bottom: 0;
+  width: 100%;
 }
 
 .mainContainer__projectItemArrow img {
-  width: 80%;
+  width: 3%;
 }
 
 .carrousel {
