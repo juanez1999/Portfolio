@@ -887,4 +887,33 @@ canvas, #instructions {
   transition: transform .6s ease, -webkit-transform .6s ease;
   margin-top: 50px;
 }
+
+.mainContainer__project--overflow {
+  overflow-y: visible;
+}
+
+.bodyOverflow {
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+.mainContainer__nav--overflow {
+  position: fixed;
+  height: 100%;
+  z-index: 5;
+}
+
+.projectView__be {
+  width: 100%;
+  height: 100%;
+}
+
+.projectView__beImg {
+  width: 100%;
+  height: 100%;
+}
+
+.projectView__beImg img {
+  width: 100%;
+}
 /*# sourceMappingURL=main.css.map */

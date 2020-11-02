@@ -21,10 +21,11 @@ function getProducts(){
             const obj = doc.data();
             obj.id = doc.id;
             objects.push(obj);
-            console.log(`${doc.id} => ${doc.data()}`);
-            console.log(`${doc.data().projectName}`);
+            // console.log(`${doc.id} => ${doc.data()}`);
+            // console.log(`${doc.data().projectName}`);
         });
         renderProjects(objects);
+        viewProject();
     });
 }
 
@@ -33,21 +34,33 @@ getProducts();
 
 function renderProjects(list){
     const carrouselStripe = document.querySelector('.carrousel__stripe');
-    carrouselStripe.innerHTML = '';
-
-    list.forEach(function (elem) {
-        const newProject = document.createElement('div');
-        newProject.classList.add('mainContainer__projectItem');
-
-        newProject.innerHTML = `
+    if(carrouselStripe !=null){
+        carrouselStripe.innerHTML = '';
+        list.forEach(function (elem) {
+            const newProject = document.createElement('div');
+            newProject.classList.add('mainContainer__projectItem');
+            
+            newProject.innerHTML = `
             <div class="mainContainer__projectItemName">
-                <h1 class="title titleProject">${elem.projectName}</h1>
-                <h3 class="title DescProject">${elem.projectDesc}</h3>
+            <h1 class="title titleProject">${elem.projectName}</h1>
+            <h3 class="title DescProject">${elem.projectDesc}</h3>
             </div>
             <div class="mainContainer__projectItemImg">
-                <img src="${elem.projectImg}" alt="">
+            <img src="${elem.projectImg}" alt="">
             </div>
-        `;
-        carrouselStripe.appendChild(newProject);
+            `;
+            carrouselStripe.appendChild(newProject);
+        });
+    }   
+}
+
+function viewProject(){
+    var projects = document.querySelectorAll('.mainContainer__projectItem');
+    projects.forEach(function (elem,index) {
+        elem.addEventListener('click', function(){
+            window.location.href = '/Portfolio/projectView.html'
+            localStorage.setItem("id", index);
+        });
     });
 }
+
