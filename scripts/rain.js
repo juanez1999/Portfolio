@@ -224,7 +224,7 @@ Rain.prototype.splash = function() {
 		var drops = demo.drops;
 		var drop_pool = demo.drop_pool;
 
-		for (var i=0; i<16; i++) {
+		for (var i=0; i<10; i++) {
 			var drop = drop_pool.pop() || new Drop();
 			drops.push(drop);
 			drop.init(this.x);
