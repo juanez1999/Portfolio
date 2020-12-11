@@ -1,6 +1,9 @@
 .mainContainer__project{
     &--overflow{
         overflow-y: visible;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
 }
 
@@ -34,4 +37,7 @@
 
 .mainContainer__projectItemArrow--overflow{
     position: fixed;
+}
+
+.projectView{
 }

@@ -42,11 +42,11 @@ function renderProjects(list){
             
             newProject.innerHTML = `
             <div class="mainContainer__projectItemName">
-            <h1 class="title titleProject">${elem.projectName}</h1>
-            <h3 class="title DescProject">${elem.projectDesc}</h3>
+                <h1 class="title titleProject">${elem.projectName}</h1>
+                <h3 class="title DescProject">${elem.projectDesc}</h3>
             </div>
             <div class="mainContainer__projectItemImg">
-            <img class="mainContainer__projectItemImgView" src="${elem.projectImg}" alt="">
+                <img class="mainContainer__projectItemImgView" src="${elem.projectImg}" alt="">
             </div>
             `;
             carrouselStripe.appendChild(newProject);
@@ -58,7 +58,7 @@ function viewProject(){
     var projects = document.querySelectorAll('.mainContainer__projectItemImgView');
     projects.forEach(function (elem,index) {
         elem.addEventListener('click', function(){
-            window.location.href = '/Portfolio/projectView.html'
+            window.location.href = 'projectView.html'
             localStorage.setItem("id", index);
         });
     });

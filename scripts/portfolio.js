@@ -6,6 +6,7 @@ var number = document.querySelector('.mainContainer__projectStateNumber');
 const carrousel = document.querySelector('.carrousel');
 const carrouselStripe = document.querySelector('.carrousel__stripe');
 let current = 0;
+let timer = true;
 
 function handleNextSlide () {
     const project = document.querySelector('.mainContainer__projectItem');
@@ -23,5 +24,9 @@ function handleNextSlide () {
 arrow.addEventListener('click', handleNextSlide);
 
 $(document).bind('mousewheel', function(e) {
-    handleNextSlide();
+    if(timer){
+        handleNextSlide();
+        timer=false;
+    }
+    setTimeout(()=>timer=true,2000);
 });

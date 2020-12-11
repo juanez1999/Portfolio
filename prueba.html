@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+    <title>Juanes Pérez Interactive Designer</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="shortcut icon" href="./resources/logoSolo.svg" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+</head>
+<body>
+    <div id="page-wrap">
+        <div id="canvas"></div>
+    
+        <!-- div used to create our plane -->
+        <div class="curtain">
+            
+            <!-- image that will be used as a texture by our plane -->
+            <img data-sampler="simplePlaneTexture" src="/Portfolio/resources/astromind.png" />
+            
+        </div>
+    </div>
+    
+    
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/textInteraction.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <script src="./scripts/animateImg.js"></script>
+    <script src="./scripts/getProjects.js"></script>
+    <script src="./scripts/curtains.umd.min.js"></script>
+    
+</body>

@@ -312,6 +312,11 @@ canvas, #instructions {
   height: 80%;
 }
 
+.mainContainer__info--skills {
+  width: 40%;
+  height: 90%;
+}
+
 .mainContainer__infoBlock {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -405,7 +410,7 @@ canvas, #instructions {
 }
 
 .splash_logo {
-  background-image: url(/Portfolio/resources/logoSolo.svg);
+  background-image: url(/resources/logoSolo.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 7%;
@@ -570,7 +575,7 @@ canvas, #instructions {
 @-webkit-keyframes logo {
   100% {
     color: #181818;
-    background-image: url(/Portfolio/resources/logoOutline.svg);
+    background-image: url(/resources/logoOutline.svg);
     background-size: 11%;
   }
 }
@@ -578,7 +583,7 @@ canvas, #instructions {
 @keyframes logo {
   100% {
     color: #181818;
-    background-image: url(/Portfolio/resources/logoOutline.svg);
+    background-image: url(/resources/logoOutline.svg);
     background-size: 11%;
   }
 }
@@ -830,8 +835,75 @@ canvas, #instructions {
   margin-top: 50px;
 }
 
+body {
+  /* make the body fit our viewport */
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  /* hide scrollbars */
+  overflow: hidden;
+}
+
+#page-wrap {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#canvas {
+  /* make the canvas wrapper fit the window */
+  height: 100vh;
+  width: 100vw;
+}
+
+.curtain {
+  /* define the size of your curtain */
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  bottom: 5%;
+  left: 5%;
+}
+
+.curtain img {
+  /* hide the img element */
+  display: none;
+}
+
+/*** in case of error show the image ***/
+.no-curtains .curtain {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.no-curtains .curtain img {
+  display: block;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .mainContainer__project--overflow {
   overflow-y: visible;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .bodyOverflow {
@@ -861,5 +933,194 @@ canvas, #instructions {
 
 .mainContainer__projectItemArrow--overflow {
   position: fixed;
+}
+
+.col_half {
+  width: 49%;
+}
+
+.col_third {
+  width: 32%;
+}
+
+.col_fourth {
+  width: 23.5%;
+}
+
+.col_fifth {
+  width: 18.4%;
+}
+
+.col_sixth {
+  width: 15%;
+}
+
+.col_three_fourth {
+  width: 74.5%;
+}
+
+.col_twothird {
+  width: 66%;
+}
+
+.col_half,
+.col_third,
+.col_twothird,
+.col_fourth,
+.col_three_fourth,
+.col_fifth {
+  position: relative;
+  display: inline;
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+}
+
+.end {
+  margin-right: 0 !important;
+}
+
+/*-=-=-=-=-=-=-=-=-=-=- */
+/* Flip Panel */
+/*-=-=-=-=-=-=-=-=-=-=- */
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 55%;
+  hoverflow: hidden;
+}
+
+.panel {
+  margin: 0 auto;
+  height: 300px;
+  position: relative;
+  -webkit-perspective: 600px;
+  -moz-perspective: 600px;
+}
+
+.panel .front,
+.panel .back {
+  text-align: center;
+}
+
+.panel .front {
+  height: inherit;
+  position: absolute;
+  top: 0;
+  z-index: 900;
+  text-align: center;
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+  -moz-transform: rotateX(0deg) rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.panel .back {
+  height: inherit;
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.panel.flip .front {
+  z-index: 900;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+}
+
+.panel.flip .back {
+  z-index: 1000;
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+  -moz-transform: rotateX(0deg) rotateY(0deg);
+}
+
+.box1 {
+  cursor: pointer;
+  font-size: 30px;
+  color: #AAAAAA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #FFFFFF;
+  width: 230px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+.box2 {
+  cursor: pointer;
+  font-size: 18px;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #76E2FF;
+  width: 230px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+.box2--tools {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.box2--tools img {
+  width: 20%;
+  margin: 0 10px;
 }
 /*# sourceMappingURL=main.css.map */

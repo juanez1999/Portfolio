@@ -20,7 +20,7 @@ var btn = document.querySelector('.btnMain');
 
 if(btn != undefined){
   btn.addEventListener('click',function(){
-    window.location.href = '/Portfolio/portfolio.html';
+    window.location.href = 'portfolio.html';
   });
 }
 
