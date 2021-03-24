@@ -1,5 +1,4 @@
 var getUrl = window.location.pathname;
-console.log(getUrl);
 
 switch (getUrl) {
     case '/Portfolio/index.html':
