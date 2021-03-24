@@ -138,7 +138,7 @@ $bg: #191919;
 
     &_logo {
 
-       background-image: url(../resources/logoSolo.svg);
+       background-image: url(./resources/logoSolo.svg);
        background-repeat: no-repeat;
        background-position: center;
        background-size: 7%;
@@ -272,7 +272,7 @@ $bg: #191919;
 @include keyframes (logo) {
     100% {
         color: $black;
-        background-image: url(../resources/logoOutline.svg);
+        background-image: url(./resources/logoOutline.svg);
         background-size: 11%;
     }
 }
